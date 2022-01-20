@@ -1,0 +1,19 @@
+﻿@using PDFForm.Models
+@model Pizza
+
+@{
+    ViewData["Title"] = "Order Page";
+}
+
+<html>
+<body>
+    <h2>Hi @Html.TextBoxFor(dto=> dto.Name)!</h2>
+    <p>
+        Thanks for ordering a @Html.TextBoxFor(dto => dto.Size) pizza.
+        Tomatoes: @Html.TextBoxFor(dto => dto.Tomatoes).
+        Onions: @Html.TextBoxFor(dto => dto.Onions).
+        Tuna: @Html.TextBoxFor(dto => dto.Tuna).
+        Cheese: @Html.TextBoxFor(dto => dto.Cheese).
+    </p>
+</body>
+</html>

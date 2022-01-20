@@ -1,0 +1,11 @@
+﻿@using PDFForm.Models
+@model Pizza
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Note, if you run this application locally, then be aware that the URL of the submit button on the pizza forms points to www.tallcomponents.com.</p>
+    <p><a href="@Url.Action("Form", "Home")">Submit PDF form data to enpoint that returns an HTML thank you.</a></p>
+</div>
